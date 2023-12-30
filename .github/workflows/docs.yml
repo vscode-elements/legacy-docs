@@ -2,7 +2,7 @@
 name: Docs
 
 env:
-  PATH_PREFIX: "/vscode-webview-elements/"
+  PATH_PREFIX: "/legacy-docs/"
 
 on:
   # Allows you to run this workflow manually from the Actions tab

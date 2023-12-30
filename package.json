@@ -21,7 +21,7 @@
     "lint:eslint": "eslint src/**/*.ts",
     "lint:lit-analyzer": "lit-analyzer",
     "format": "prettier src/**/* --write",
-    "docs": "wireit",
+    "docs": "cross-env NODE_ENV=production && eleventy --config=.eleventy.cjs",
     "docs:dev": "wireit",
     "docs:start": "wireit",
     "analyze": "wireit",
@@ -71,25 +71,6 @@
     "build:watch": {
       "command": "tsc --watch",
       "service": true
-    },
-    "docs": {
-      "command": "eleventy --config=.eleventy.cjs",
-      "env": {
-        "NODE_ENV": "production"
-      },
-      "dependencies": [
-        "build",
-        "analyze"
-      ],
-      "files": [
-        ".env",
-        "docs-src/**/*",
-        ".eleventy.cjs",
-        "custom-elements.json"
-      ],
-      "output": [
-        "docs/**/*"
-      ]
     },
     "docs:dev": {
       "command": "eleventy --config=.eleventy.cjs",
