@@ -1,0 +1,16 @@
+/node_modules/
+/lib/
+/test/
+.wireit/
+docs/
+.vscode/settings.json
+
+/dist/
+/coverage/
+
+.env
+debug.log
+stats.html
+
+bendera-vscode-webview-elements-*.tgz
+custom-elements.json
